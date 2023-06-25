@@ -157,6 +157,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./apps/my-app/",\
           "packageDependencies": [\
             ["@my-app/web", "workspace:apps/my-app"],\
+            ["@my-app/lib", "workspace:packages/lib"],\
             ["@types/node", "npm:20.3.1"],\
             ["@types/react", "npm:18.2.14"],\
             ["@types/react-dom", "npm:18.2.6"],\

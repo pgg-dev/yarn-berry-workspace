@@ -81,7 +81,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@my-app/lib@workspace:packages/lib":
+"@my-app/lib@workspace:^, @my-app/lib@workspace:packages/lib":
   version: 0.0.0-use.local
   resolution: "@my-app/lib@workspace:packages/lib"
   dependencies:
@@ -93,6 +93,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@my-app/web@workspace:apps/my-app"
   dependencies:
+    "@my-app/lib": "workspace:^"
     "@types/node": 20.3.1
     "@types/react": 18.2.14
     "@types/react-dom": 18.2.6
