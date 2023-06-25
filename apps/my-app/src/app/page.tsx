@@ -1,10 +1,15 @@
-import Image from 'next/image'
-import styles from './page.module.css'
+import Image from "next/image";
+import styles from "./page.module.css";
+import { sayHello } from "@my-app/lib";
 
 export default function Home() {
   return (
     <main className={styles.main}>
       <div className={styles.description}>
+        <p>
+          의존성 테스트&nbsp;
+          <code className={styles.code}>{sayHello()}</code>
+        </p>
         <p>
           Get started by editing&nbsp;
           <code className={styles.code}>src/app/page.tsx</code>
@@ -15,7 +20,7 @@ export default function Home() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            By{' '}
+            By{" "}
             <Image
               src="/vercel.svg"
               alt="Vercel Logo"
@@ -91,5 +96,5 @@ export default function Home() {
         </a>
       </div>
     </main>
-  )
+  );
 }
