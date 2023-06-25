@@ -81,6 +81,14 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@my-app/lib@workspace:packages/lib":
+  version: 0.0.0-use.local
+  resolution: "@my-app/lib@workspace:packages/lib"
+  dependencies:
+    typescript: ^5.1.3
+  languageName: unknown
+  linkType: soft
+
 "@my-app/web@workspace:apps/my-app":
   version: 0.0.0-use.local
   resolution: "@my-app/web@workspace:apps/my-app"
