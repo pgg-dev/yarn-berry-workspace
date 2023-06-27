@@ -1,32 +1,8 @@
 {
   "name": "@my-app/lib",
-  "$schema": "https://json.schemastore.org/tsconfig",
-  "extends": "../../tsconfig.base.json",
-  "compilerOptions": {
-    "module": "ESNext",
-    "moduleResolution": "node",
-    "target": "ESNext",
-    "lib": [
-      "ESNext"
-    ],
-    "esModuleInterop": true,
-    "allowSyntheticDefaultImports": true,
-    "baseUrl": "./src",
-    "noEmit": false,
-    "incremental": true,
-    "resolveJsonModule": true
-  },
-  "exclude": [
-    "**/node_modules",
-    "**/.*/",
-    "./dist",
-    "./coverage"
-  ],
-  "include": [
-    "**/*.ts",
-    "**/*.js",
-    "**/.cjs",
-    "**/*.mjs",
-    "**/*.json"
-  ]
+  "packageManager": "yarn@3.6.0",
+  "main": "./src/index.ts",
+  "dependencies": {
+    "typescript": "^5.1.3"
+  }
 }
