@@ -1,4 +1,5 @@
 import { sayHello } from "@my-app/lib";
+import { Button } from "@my-app/ui";
 import Image from "next/image";
 import styles from "./page.module.css";
 
@@ -32,6 +33,8 @@ export default function Home() {
           </a>
         </div>
       </div>
+
+      <Button>Hello from @my-app/ui </Button>
 
       <div className={styles.center}>
         <Image
